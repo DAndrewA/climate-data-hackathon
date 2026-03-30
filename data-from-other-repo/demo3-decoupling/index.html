@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy Decoupling Analysis</title>
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0f172a;
+            color: #e2e8f0;
+            min-height: 100vh;
+        }
+        header {
+            padding: 24px 32px 4px;
+            text-align: center;
+        }
+        header h1 { font-size: 28px; font-weight: 700; color: #f8fafc; }
+        header p { font-size: 14px; color: #94a3b8; margin-top: 4px; max-width: 700px; margin-inline: auto; }
+        .controls {
+            display: flex; align-items: center; justify-content: center; gap: 20px;
+            padding: 16px 32px; flex-wrap: wrap;
+        }
+        .control-group {
+            display: flex; align-items: center; gap: 8px;
+        }
+        .control-group label { font-size: 13px; color: #94a3b8; }
+        select {
+            padding: 8px 12px; border-radius: 6px; border: 1px solid #334155;
+            background: #1e293b; color: #e2e8f0; font-size: 13px; cursor: pointer;
+        }
+        .legend {
+            display: flex; gap: 20px; justify-content: center; padding: 0 32px 12px;
+            flex-wrap: wrap;
+        }
+        .legend-item {
+            display: flex; align-items: center; gap: 6px; font-size: 12px; color: #94a3b8;
+        }
+        .legend-dot {
+            width: 12px; height: 12px; border-radius: 50%;
+        }
+        .charts {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+            padding: 0 16px;
+        }
+        .chart-container { width: 100%; }
+        .full-width { grid-column: 1 / -1; padding: 0 16px; }
+        #scatter { height: 500px; }
+        #ranking { height: 500px; }
+        #detail { height: 320px; }
+        .summary-cards {
+            display: flex; justify-content: center; gap: 24px;
+            padding: 12px 32px; flex-wrap: wrap;
+        }
+        .card {
+            background: #1e293b; border: 1px solid #334155; border-radius: 8px;
+            padding: 14px 24px; text-align: center; min-width: 200px;
+        }
+        .card .label { font-size: 11px; color: #64748b; text-transform: uppercase; letter-spacing: 0.5px; }
+        .card .value { font-size: 24px; font-weight: 700; margin-top: 4px; }
+        .card .sub { font-size: 11px; color: #94a3b8; margin-top: 2px; }
+        .green { color: #22c55e; }
+        .red { color: #ef4444; }
+        .blue { color: #3b82f6; }
+        .amber { color: #f59e0b; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Energy Decoupling Analysis</h1>
+        <p>Which countries have grown their economies while reducing energy intensity? Decoupling means GDP energy intensity falls even as per-capita energy use stays stable or rises.</p>
+    </header>
+    <div class="controls">
+        <div class="control-group">
+            <label>Period:</label>
+            <select id="periodSelect" onchange="analyze()">
+                <option value="2000-2023">2000 &rarr; 2023 (Recent)</option>
+                <option value="1990-2023">1990 &rarr; 2023 (Long-term)</option>
+                <option value="1980-2023">1980 &rarr; 2023 (Full)</option>
+                <option value="2010-2023">2010 &rarr; 2023 (Last decade)</option>
+                <option value="1990-2010">1990 &rarr; 2010</option>
+            </select>
+        </div>
+        <div class="control-group">
+            <label>Min data points:</label>
+            <select id="minDataSelect" onchange="analyze()">
+                <option value="5">5 years</option>
+                <option value="10" selected>10 years</option>
+                <option value="15">15 years</option>
+            </select>
+        </div>
+    </div>
+    <div class="legend">
+        <div class="legend-item"><div class="legend-dot" style="background:#22c55e"></div> Strong decoupling (GDP intensity &darr; &gt;20%, per-capita stable/&uarr;)</div>
+        <div class="legend-item"><div class="legend-dot" style="background:#3b82f6"></div> Weak decoupling (GDP intensity &darr;, per-capita &darr; less)</div>
+        <div class="legend-item"><div class="legend-dot" style="background:#f59e0b"></div> No decoupling (both rising or flat)</div>
+        <div class="legend-item"><div class="legend-dot" style="background:#ef4444"></div> Recoupling (GDP intensity &uarr;)</div>
+    </div>
+    <div class="summary-cards" id="summaryCards"></div>
+    <div class="charts">
+        <div class="chart-container"><div id="scatter"></div></div>
+        <div class="chart-container"><div id="ranking"></div></div>
+    </div>
+    <div class="full-width">
+        <div id="detail"></div>
+    </div>
+
+    <script>
+    const CODE_MAP = {
+        'WORL': null, 'HKNG': 'HKG', 'MACA': 'MAC', 'TAIW': 'TWN',
+        'CSXX': 'CZE', 'CSK': null, 'SCG': null, 'SUN': null,
+        'YUG': null, 'DDR': null, 'DEUW': null, 'HITZ': null,
+        'USIQ': null, 'USOH': null, 'WAK': null, 'NLDA': null
+    };
+
+    let allData = {};
+    const years = [];
+    for (let y = 1980; y <= 2023; y++) years.push(y);
+
+    async function loadData() {
+        const resp = await fetch('../INT-Export-02-25-2026_14-58-07.csv');
+        let text = await resp.text();
+        if (text.charCodeAt(0) === 0xFEFF) text = text.slice(1);
+        const lines = text.split(/\r?\n/);
+        let currentCountry = null;
+
+        for (let i = 2; i < lines.length; i++) {
+            const line = lines[i].trim();
+            if (!line) continue;
+            const cols = parseCSVLine(line);
+            if (!cols || cols.length < 3) continue;
+            const api = cols[0].trim();
+            const label = cols[1].trim();
+
+            if (!api && label) { currentCountry = label; continue; }
+            if (!api.startsWith('INTL.47-3')) continue;
+
+            const codeMatch = api.match(/INTL\.47-3[34]-([A-Z]+)-/);
+            if (!codeMatch) continue;
+            let code = codeMatch[1];
+
+            if (CODE_MAP.hasOwnProperty(code)) {
+                if (CODE_MAP[code] === null) continue;
+                code = CODE_MAP[code];
+            }
+
+            if (!allData[code]) allData[code] = { name: currentCountry || code, pop: {}, gdp: {} };
+            const metricType = api.includes('47-33') ? 'pop' : 'gdp';
+
+            for (let j = 0; j < 44 && j + 2 < cols.length; j++) {
+                const v = parseVal(cols[j + 2]);
+                if (v !== null) allData[code][metricType][1980 + j] = v;
+            }
+        }
+        analyze();
+    }
+
+    function parseVal(s) {
+        if (!s) return null;
+        s = s.trim().replace(/"/g, '');
+        if (s === '--' || s === 'NA' || s === '' || s === '0') return null;
+        const n = parseFloat(s);
+        return isNaN(n) || n === 0 ? null : n;
+    }
+
+    function parseCSVLine(line) {
+        const result = [];
+        let current = '', inQuotes = false;
+        for (let i = 0; i < line.length; i++) {
+            const ch = line[i];
+            if (inQuotes) {
+                if (ch === '"' && line[i + 1] === '"') { current += '"'; i++; }
+                else if (ch === '"') inQuotes = false;
+                else current += ch;
+            } else {
+                if (ch === '"') inQuotes = true;
+                else if (ch === ',') { result.push(current); current = ''; }
+                else current += ch;
+            }
+        }
+        result.push(current);
+        return result;
+    }
+
+    function analyze() {
+        const [startYear, endYear] = document.getElementById('periodSelect').value.split('-').map(Number);
+        const minData = +document.getElementById('minDataSelect').value;
+
+        const results = [];
+
+        for (const [code, d] of Object.entries(allData)) {
+            // Need data at both endpoints for both metrics
+            // Use averaging over first/last 3 years for robustness
+            const popStart = avg(d.pop, startYear, startYear + 2);
+            const popEnd = avg(d.pop, endYear - 2, endYear);
+            const gdpStart = avg(d.gdp, startYear, startYear + 2);
+            const gdpEnd = avg(d.gdp, endYear - 2, endYear);
+
+            if (popStart === null || popEnd === null || gdpStart === null || gdpEnd === null) continue;
+
+            // Count data points in range
+            let count = 0;
+            for (let y = startYear; y <= endYear; y++) {
+                if (d.pop[y] != null && d.gdp[y] != null) count++;
+            }
+            if (count < minData) continue;
+
+            const popChange = ((popEnd - popStart) / popStart) * 100;
+            const gdpChange = ((gdpEnd - gdpStart) / gdpStart) * 100;
+
+            // Classification
+            let category, color;
+            if (gdpChange < -20 && popChange >= -5) {
+                category = 'Strong decoupling'; color = '#22c55e';
+            } else if (gdpChange < 0 && gdpChange < popChange) {
+                category = 'Weak decoupling'; color = '#3b82f6';
+            } else if (gdpChange >= 0) {
+                category = 'Recoupling'; color = '#ef4444';
+            } else {
+                category = 'No decoupling'; color = '#f59e0b';
+            }
+
+            // Decoupling score: how much more GDP intensity fell vs per-capita
+            const score = popChange - gdpChange;
+
+            results.push({ code, name: d.name, popChange, gdpChange, score, category, color });
+        }
+
+        results.sort((a, b) => b.score - a.score);
+        renderSummary(results);
+        renderScatter(results);
+        renderRanking(results, startYear, endYear);
+
+        // Show top decoupler detail by default
+        if (results.length > 0) {
+            renderDetail(results[0].code, +document.getElementById('periodSelect').value.split('-')[0], +document.getElementById('periodSelect').value.split('-')[1]);
+        }
+    }
+
+    function avg(obj, y1, y2) {
+        let sum = 0, count = 0;
+        for (let y = y1; y <= y2; y++) {
+            if (obj[y] != null) { sum += obj[y]; count++; }
+        }
+        return count > 0 ? sum / count : null;
+    }
+
+    function renderSummary(results) {
+        const strong = results.filter(r => r.category === 'Strong decoupling').length;
+        const weak = results.filter(r => r.category === 'Weak decoupling').length;
+        const none = results.filter(r => r.category === 'No decoupling').length;
+        const recouple = results.filter(r => r.category === 'Recoupling').length;
+
+        document.getElementById('summaryCards').innerHTML = `
+            <div class="card"><div class="label">Strong Decouplers</div><div class="value green">${strong}</div><div class="sub">GDP intensity &darr; &gt;20%, stable per-capita</div></div>
+            <div class="card"><div class="label">Weak Decouplers</div><div class="value blue">${weak}</div><div class="sub">GDP intensity falling faster</div></div>
+            <div class="card"><div class="label">No Decoupling</div><div class="value amber">${none}</div><div class="sub">Both falling similarly</div></div>
+            <div class="card"><div class="label">Recoupling</div><div class="value red">${recouple}</div><div class="sub">GDP intensity rising</div></div>
+        `;
+    }
+
+    function renderScatter(results) {
+        const categories = ['Strong decoupling', 'Weak decoupling', 'No decoupling', 'Recoupling'];
+        const colors = { 'Strong decoupling': '#22c55e', 'Weak decoupling': '#3b82f6', 'No decoupling': '#f59e0b', 'Recoupling': '#ef4444' };
+
+        const traces = categories.map(cat => {
+            const items = results.filter(r => r.category === cat);
+            return {
+                x: items.map(r => r.gdpChange),
+                y: items.map(r => r.popChange),
+                text: items.map(r => r.name),
+                customdata: items.map(r => r.code),
+                mode: 'markers+text',
+                type: 'scatter',
+                name: cat,
+                textposition: 'top center',
+                textfont: { size: 9, color: '#64748b' },
+                marker: { color: colors[cat], size: 10, opacity: 0.8, line: { color: '#0f172a', width: 1 } },
+                hovertemplate: '<b>%{text}</b><br>GDP intensity: %{x:.1f}%<br>Per-capita: %{y:.1f}%<extra></extra>'
+            };
+        });
+
+        const layout = {
+            title: { text: 'Decoupling Scatter: GDP Intensity vs Per-Capita Change', font: { color: '#e2e8f0', size: 14 } },
+            xaxis: {
+                title: { text: '% Change in Energy/GDP', font: { size: 12, color: '#94a3b8' } },
+                color: '#64748b', gridcolor: '#1e293b', zeroline: true, zerolinecolor: '#475569', zerolinewidth: 2
+            },
+            yaxis: {
+                title: { text: '% Change in Energy/Capita', font: { size: 12, color: '#94a3b8' } },
+                color: '#64748b', gridcolor: '#1e293b', zeroline: true, zerolinecolor: '#475569', zerolinewidth: 2
+            },
+            paper_bgcolor: '#0f172a', plot_bgcolor: '#0f172a',
+            legend: { font: { color: '#94a3b8', size: 11 }, bgcolor: 'rgba(0,0,0,0)' },
+            margin: { t: 40, b: 50, l: 60, r: 20 },
+            height: 500,
+            // Reference quadrant labels
+            annotations: [
+                { x: -40, y: 60, text: 'STRONG<br>DECOUPLING', showarrow: false, font: { color: '#22c55e', size: 11 }, opacity: 0.5 },
+                { x: 20, y: 60, text: 'BOTH<br>RISING', showarrow: false, font: { color: '#ef4444', size: 11 }, opacity: 0.5 },
+                { x: -40, y: -40, text: 'BOTH<br>FALLING', showarrow: false, font: { color: '#f59e0b', size: 11 }, opacity: 0.5 },
+                { x: 20, y: -40, text: 'INVERSE<br>DECOUPLING', showarrow: false, font: { color: '#94a3b8', size: 11 }, opacity: 0.5 }
+            ]
+        };
+
+        Plotly.react('scatter', traces, layout, { responsive: true, displayModeBar: false });
+
+        // Click handler to show detail
+        document.getElementById('scatter').on('plotly_click', function(data) {
+            const code = data.points[0].customdata;
+            const [s, e] = document.getElementById('periodSelect').value.split('-').map(Number);
+            renderDetail(code, s, e);
+        });
+    }
+
+    function renderRanking(results, startYear, endYear) {
+        const top20 = results.slice(0, 25);
+        const bottom10 = results.slice(-10).reverse();
+        const combined = [...top20, ...bottom10];
+
+        const data = [{
+            type: 'bar',
+            y: combined.map(r => r.name),
+            x: combined.map(r => r.score),
+            orientation: 'h',
+            marker: {
+                color: combined.map(r => r.color)
+            },
+            hovertemplate: '<b>%{y}</b><br>Score: %{x:.1f}<br>Per-capita: %{customdata[0]:.1f}%<br>GDP intensity: %{customdata[1]:.1f}%<extra></extra>',
+            customdata: combined.map(r => [r.popChange, r.gdpChange])
+        }];
+
+        const layout = {
+            title: { text: `Decoupling Score (top 25 + bottom 10)`, font: { color: '#e2e8f0', size: 14 } },
+            xaxis: {
+                title: { text: 'Decoupling score (per-capita change minus GDP-intensity change)', font: { size: 11, color: '#94a3b8' } },
+                color: '#64748b', gridcolor: '#1e293b'
+            },
+            yaxis: { color: '#94a3b8', autorange: 'reversed', tickfont: { size: 10 } },
+            paper_bgcolor: '#0f172a', plot_bgcolor: '#0f172a',
+            margin: { t: 40, b: 50, l: 140, r: 20 },
+            height: 500
+        };
+
+        Plotly.react('ranking', data, layout, { responsive: true, displayModeBar: false });
+
+        document.getElementById('ranking').on('plotly_click', function(data) {
+            const name = data.points[0].y;
+            const entry = results.find(r => r.name === name);
+            if (entry) {
+                const [s, e] = document.getElementById('periodSelect').value.split('-').map(Number);
+                renderDetail(entry.code, s, e);
+            }
+        });
+    }
+
+    function renderDetail(code, startYear, endYear) {
+        const d = allData[code];
+        if (!d) return;
+
+        const yrs = [];
+        for (let y = startYear; y <= endYear; y++) yrs.push(y);
+
+        const popVals = yrs.map(y => d.pop[y] || null);
+        const gdpVals = yrs.map(y => d.gdp[y] || null);
+
+        const traces = [
+            {
+                x: yrs, y: popVals, name: 'Energy per Capita (MMBtu/person)',
+                yaxis: 'y', line: { color: '#3b82f6', width: 2.5 }, mode: 'lines'
+            },
+            {
+                x: yrs, y: gdpVals, name: 'Energy per GDP (1000 Btu/$GDP PPP)',
+                yaxis: 'y2', line: { color: '#f59e0b', width: 2.5 }, mode: 'lines'
+            }
+        ];
+
+        const layout = {
+            title: { text: `${d.name} — Energy Intensity Trends`, font: { color: '#f8fafc', size: 15 } },
+            xaxis: { color: '#64748b', gridcolor: '#1e293b' },
+            yaxis: {
+                title: { text: 'MMBtu/person', font: { size: 11, color: '#3b82f6' } },
+                color: '#3b82f6', gridcolor: '#1e293b', side: 'left'
+            },
+            yaxis2: {
+                title: { text: '1000 Btu/$GDP PPP', font: { size: 11, color: '#f59e0b' } },
+                color: '#f59e0b', overlaying: 'y', side: 'right', gridcolor: 'transparent'
+            },
+            legend: { font: { color: '#94a3b8', size: 11 }, bgcolor: 'rgba(0,0,0,0)', orientation: 'h', y: -0.15 },
+            paper_bgcolor: '#0f172a', plot_bgcolor: '#0f172a',
+            margin: { t: 40, b: 60, l: 60, r: 60 },
+            height: 320
+        };
+
+        Plotly.react('detail', traces, layout, { responsive: true, displayModeBar: false });
+    }
+
+    loadData();
+    </script>
+</body>
+</html>

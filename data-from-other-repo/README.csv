@@ -1,0 +1,387 @@
+File,Description,Units,Row Count
+biofuels/biofuels-consumption-kmt.csv,Biofuels - Consumption (1000 metric tons),1000 metric tons,261
+biofuels/biofuels-consumption-mtoe.csv,Biofuels - Consumption (million metric tons of oil equivalent),million metric tons of oil equivalent,261
+biofuels/biofuels-consumption-qbtu.csv,Biofuels - Consumption (quadrillion Btu),quadrillion Btu,261
+biofuels/biofuels-consumption-tbpd.csv,Biofuels - Consumption (thousand barrels per day),thousand barrels per day,261
+biofuels/biofuels-consumption-tj.csv,Biofuels - Consumption (terajoules),terajoules,261
+biofuels/biofuels-production-kmt.csv,Biofuels - Production (1000 metric tons),1000 metric tons,261
+biofuels/biofuels-production-mtoe.csv,Biofuels - Production (million metric tons of oil equivalent),million metric tons of oil equivalent,261
+biofuels/biofuels-production-qbtu.csv,Biofuels - Production (quadrillion Btu),quadrillion Btu,261
+biofuels/biofuels-production-tbpd.csv,Biofuels - Production (thousand barrels per day),thousand barrels per day,261
+biofuels/biofuels-production-tj.csv,Biofuels - Production (terajoules),terajoules,261
+biofuels/biomass-based-diesel-consumption-kmt.csv,Biomass-based diesel - Consumption (1000 metric tons),1000 metric tons,264
+biofuels/biomass-based-diesel-consumption-mtoe.csv,Biomass-based diesel - Consumption (million metric tons of oil equivalent),million metric tons of oil equivalent,264
+biofuels/biomass-based-diesel-consumption-qbtu.csv,Biomass-based diesel - Consumption (quadrillion Btu),quadrillion Btu,264
+biofuels/biomass-based-diesel-consumption-tbpd.csv,Biomass-based diesel - Consumption (thousand barrels per day),thousand barrels per day,264
+biofuels/biomass-based-diesel-consumption-tj.csv,Biomass-based diesel - Consumption (terajoules),terajoules,264
+biofuels/biomass-based-diesel-production-kmt.csv,Biomass-based diesel - Production (1000 metric tons),1000 metric tons,264
+biofuels/biomass-based-diesel-production-mtoe.csv,Biomass-based diesel - Production (million metric tons of oil equivalent),million metric tons of oil equivalent,264
+biofuels/biomass-based-diesel-production-qbtu.csv,Biomass-based diesel - Production (quadrillion Btu),quadrillion Btu,264
+biofuels/biomass-based-diesel-production-tbpd.csv,Biomass-based diesel - Production (thousand barrels per day),thousand barrels per day,264
+biofuels/biomass-based-diesel-production-tj.csv,Biomass-based diesel - Production (terajoules),terajoules,264
+biofuels/fuel-ethanol-consumption-kmt.csv,Fuel ethanol - Consumption (1000 metric tons),1000 metric tons,264
+biofuels/fuel-ethanol-consumption-mtoe.csv,Fuel ethanol - Consumption (million metric tons of oil equivalent),million metric tons of oil equivalent,264
+biofuels/fuel-ethanol-consumption-qbtu.csv,Fuel ethanol - Consumption (quadrillion Btu),quadrillion Btu,264
+biofuels/fuel-ethanol-consumption-tbpd.csv,Fuel ethanol - Consumption (thousand barrels per day),thousand barrels per day,264
+biofuels/fuel-ethanol-consumption-tj.csv,Fuel ethanol - Consumption (terajoules),terajoules,264
+biofuels/fuel-ethanol-production-kmt.csv,Fuel ethanol - Production (1000 metric tons),1000 metric tons,264
+biofuels/fuel-ethanol-production-mtoe.csv,Fuel ethanol - Production (million metric tons of oil equivalent),million metric tons of oil equivalent,264
+biofuels/fuel-ethanol-production-qbtu.csv,Fuel ethanol - Production (quadrillion Btu),quadrillion Btu,264
+biofuels/fuel-ethanol-production-tbpd.csv,Fuel ethanol - Production (thousand barrels per day),thousand barrels per day,264
+biofuels/fuel-ethanol-production-tj.csv,Fuel ethanol - Production (terajoules),terajoules,264
+co2-emissions/co2-emissions-emissions-mmtco2.csv,CO2 emissions - Emissions (million metric tonnes carbon dioxide),million metric tonnes carbon dioxide,265
+coal-and-coke/anthracite-consumption-kmt.csv,Anthracite - Consumption (1000 metric tons),1000 metric tons,265
+coal-and-coke/anthracite-consumption-mtoe.csv,Anthracite - Consumption (million metric tons of oil equivalent),million metric tons of oil equivalent,265
+coal-and-coke/anthracite-consumption-qbtu.csv,Anthracite - Consumption (quadrillion Btu),quadrillion Btu,265
+coal-and-coke/anthracite-consumption-thousand-short-tons.csv,Anthracite - Consumption (thousand short tons),thousand short tons,265
+coal-and-coke/anthracite-consumption-tj.csv,Anthracite - Consumption (terajoules),terajoules,265
+coal-and-coke/anthracite-exports-kmt.csv,Anthracite - Exports (1000 metric tons),1000 metric tons,265
+coal-and-coke/anthracite-exports-mtoe.csv,Anthracite - Exports (million metric tons of oil equivalent),million metric tons of oil equivalent,265
+coal-and-coke/anthracite-exports-qbtu.csv,Anthracite - Exports (quadrillion Btu),quadrillion Btu,265
+coal-and-coke/anthracite-exports-thousand-short-tons.csv,Anthracite - Exports (thousand short tons),thousand short tons,265
+coal-and-coke/anthracite-exports-tj.csv,Anthracite - Exports (terajoules),terajoules,265
+coal-and-coke/anthracite-imports-kmt.csv,Anthracite - Imports (1000 metric tons),1000 metric tons,265
+coal-and-coke/anthracite-imports-mtoe.csv,Anthracite - Imports (million metric tons of oil equivalent),million metric tons of oil equivalent,265
+coal-and-coke/anthracite-imports-qbtu.csv,Anthracite - Imports (quadrillion Btu),quadrillion Btu,265
+coal-and-coke/anthracite-imports-thousand-short-tons.csv,Anthracite - Imports (thousand short tons),thousand short tons,265
+coal-and-coke/anthracite-imports-tj.csv,Anthracite - Imports (terajoules),terajoules,265
+coal-and-coke/anthracite-production-kmt.csv,Anthracite - Production (1000 metric tons),1000 metric tons,265
+coal-and-coke/anthracite-production-mtoe.csv,Anthracite - Production (million metric tons of oil equivalent),million metric tons of oil equivalent,265
+coal-and-coke/anthracite-production-qbtu.csv,Anthracite - Production (quadrillion Btu),quadrillion Btu,265
+coal-and-coke/anthracite-production-thousand-short-tons.csv,Anthracite - Production (thousand short tons),thousand short tons,265
+coal-and-coke/anthracite-production-tj.csv,Anthracite - Production (terajoules),terajoules,265
+coal-and-coke/bituminous-consumption-kmt.csv,Bituminous - Consumption (1000 metric tons),1000 metric tons,265
+coal-and-coke/bituminous-consumption-mtoe.csv,Bituminous - Consumption (million metric tons of oil equivalent),million metric tons of oil equivalent,265
+coal-and-coke/bituminous-consumption-qbtu.csv,Bituminous - Consumption (quadrillion Btu),quadrillion Btu,265
+coal-and-coke/bituminous-consumption-thousand-short-tons.csv,Bituminous - Consumption (thousand short tons),thousand short tons,265
+coal-and-coke/bituminous-consumption-tj.csv,Bituminous - Consumption (terajoules),terajoules,265
+coal-and-coke/bituminous-exports-kmt.csv,Bituminous - Exports (1000 metric tons),1000 metric tons,265
+coal-and-coke/bituminous-exports-mtoe.csv,Bituminous - Exports (million metric tons of oil equivalent),million metric tons of oil equivalent,265
+coal-and-coke/bituminous-exports-qbtu.csv,Bituminous - Exports (quadrillion Btu),quadrillion Btu,265
+coal-and-coke/bituminous-exports-thousand-short-tons.csv,Bituminous - Exports (thousand short tons),thousand short tons,265
+coal-and-coke/bituminous-exports-tj.csv,Bituminous - Exports (terajoules),terajoules,265
+coal-and-coke/bituminous-imports-kmt.csv,Bituminous - Imports (1000 metric tons),1000 metric tons,265
+coal-and-coke/bituminous-imports-mtoe.csv,Bituminous - Imports (million metric tons of oil equivalent),million metric tons of oil equivalent,265
+coal-and-coke/bituminous-imports-qbtu.csv,Bituminous - Imports (quadrillion Btu),quadrillion Btu,265
+coal-and-coke/bituminous-imports-thousand-short-tons.csv,Bituminous - Imports (thousand short tons),thousand short tons,265
+coal-and-coke/bituminous-imports-tj.csv,Bituminous - Imports (terajoules),terajoules,265
+coal-and-coke/bituminous-production-kmt.csv,Bituminous - Production (1000 metric tons),1000 metric tons,265
+coal-and-coke/bituminous-production-mtoe.csv,Bituminous - Production (million metric tons of oil equivalent),million metric tons of oil equivalent,265
+coal-and-coke/bituminous-production-qbtu.csv,Bituminous - Production (quadrillion Btu),quadrillion Btu,265
+coal-and-coke/bituminous-production-thousand-short-tons.csv,Bituminous - Production (thousand short tons),thousand short tons,265
+coal-and-coke/bituminous-production-tj.csv,Bituminous - Production (terajoules),terajoules,265
+coal-and-coke/coal-and-coke-emissions-mmtco2-1.csv,Coal and coke - Emissions (million metric tonnes carbon dioxide),million metric tonnes carbon dioxide,265
+coal-and-coke/coal-and-coke-emissions-mmtco2.csv,Coal and coke - Emissions (million metric tonnes carbon dioxide),million metric tonnes carbon dioxide,265
+coal-and-coke/coal-consumption-kmt.csv,Coal - Consumption (1000 metric tons),1000 metric tons,265
+coal-and-coke/coal-consumption-mtoe.csv,Coal - Consumption (million metric tons of oil equivalent),million metric tons of oil equivalent,265
+coal-and-coke/coal-consumption-qbtu-1.csv,Coal - Consumption (quadrillion Btu),quadrillion Btu,265
+coal-and-coke/coal-consumption-qbtu.csv,Coal - Consumption (quadrillion Btu),quadrillion Btu,265
+coal-and-coke/coal-consumption-thousand-short-tons.csv,Coal - Consumption (thousand short tons),thousand short tons,265
+coal-and-coke/coal-consumption-tj.csv,Coal - Consumption (terajoules),terajoules,265
+coal-and-coke/coal-exports-kmt.csv,Coal - Exports (1000 metric tons),1000 metric tons,265
+coal-and-coke/coal-exports-mtoe.csv,Coal - Exports (million metric tons of oil equivalent),million metric tons of oil equivalent,265
+coal-and-coke/coal-exports-qbtu.csv,Coal - Exports (quadrillion Btu),quadrillion Btu,265
+coal-and-coke/coal-exports-thousand-short-tons.csv,Coal - Exports (thousand short tons),thousand short tons,265
+coal-and-coke/coal-exports-tj.csv,Coal - Exports (terajoules),terajoules,265
+coal-and-coke/coal-generation-bkwh.csv,Coal - Generation (billion kilowatthours),billion kilowatthours,264
+coal-and-coke/coal-imports-kmt.csv,Coal - Imports (1000 metric tons),1000 metric tons,265
+coal-and-coke/coal-imports-mtoe.csv,Coal - Imports (million metric tons of oil equivalent),million metric tons of oil equivalent,265
+coal-and-coke/coal-imports-qbtu.csv,Coal - Imports (quadrillion Btu),quadrillion Btu,265
+coal-and-coke/coal-imports-thousand-short-tons.csv,Coal - Imports (thousand short tons),thousand short tons,265
+coal-and-coke/coal-imports-tj.csv,Coal - Imports (terajoules),terajoules,265
+coal-and-coke/coal-production-kmt.csv,Coal - Production (1000 metric tons),1000 metric tons,265
+coal-and-coke/coal-production-mtoe.csv,Coal - Production (million metric tons of oil equivalent),million metric tons of oil equivalent,265
+coal-and-coke/coal-production-qbtu-1.csv,Coal - Production (quadrillion Btu),quadrillion Btu,265
+coal-and-coke/coal-production-qbtu.csv,Coal - Production (quadrillion Btu),quadrillion Btu,265
+coal-and-coke/coal-production-thousand-short-tons.csv,Coal - Production (thousand short tons),thousand short tons,265
+coal-and-coke/coal-production-tj.csv,Coal - Production (terajoules),terajoules,265
+coal-and-coke/coal-reserves-million-short-tons.csv,Coal - Reserves (million short tons),million short tons,265
+coal-and-coke/lignite-consumption-kmt.csv,Lignite - Consumption (1000 metric tons),1000 metric tons,265
+coal-and-coke/lignite-consumption-mtoe.csv,Lignite - Consumption (million metric tons of oil equivalent),million metric tons of oil equivalent,265
+coal-and-coke/lignite-consumption-qbtu.csv,Lignite - Consumption (quadrillion Btu),quadrillion Btu,265
+coal-and-coke/lignite-consumption-thousand-short-tons.csv,Lignite - Consumption (thousand short tons),thousand short tons,265
+coal-and-coke/lignite-consumption-tj.csv,Lignite - Consumption (terajoules),terajoules,265
+coal-and-coke/lignite-exports-kmt.csv,Lignite - Exports (1000 metric tons),1000 metric tons,265
+coal-and-coke/lignite-exports-mtoe.csv,Lignite - Exports (million metric tons of oil equivalent),million metric tons of oil equivalent,265
+coal-and-coke/lignite-exports-qbtu.csv,Lignite - Exports (quadrillion Btu),quadrillion Btu,265
+coal-and-coke/lignite-exports-thousand-short-tons.csv,Lignite - Exports (thousand short tons),thousand short tons,265
+coal-and-coke/lignite-exports-tj.csv,Lignite - Exports (terajoules),terajoules,265
+coal-and-coke/lignite-imports-kmt.csv,Lignite - Imports (1000 metric tons),1000 metric tons,265
+coal-and-coke/lignite-imports-mtoe.csv,Lignite - Imports (million metric tons of oil equivalent),million metric tons of oil equivalent,265
+coal-and-coke/lignite-imports-qbtu.csv,Lignite - Imports (quadrillion Btu),quadrillion Btu,265
+coal-and-coke/lignite-imports-thousand-short-tons.csv,Lignite - Imports (thousand short tons),thousand short tons,265
+coal-and-coke/lignite-imports-tj.csv,Lignite - Imports (terajoules),terajoules,265
+coal-and-coke/lignite-production-kmt.csv,Lignite - Production (1000 metric tons),1000 metric tons,265
+coal-and-coke/lignite-production-mtoe.csv,Lignite - Production (million metric tons of oil equivalent),million metric tons of oil equivalent,265
+coal-and-coke/lignite-production-qbtu.csv,Lignite - Production (quadrillion Btu),quadrillion Btu,265
+coal-and-coke/lignite-production-thousand-short-tons.csv,Lignite - Production (thousand short tons),thousand short tons,265
+coal-and-coke/lignite-production-tj.csv,Lignite - Production (terajoules),terajoules,265
+coal-and-coke/metallurgical-coal-consumption-kmt.csv,Metallurgical coal - Consumption (1000 metric tons),1000 metric tons,265
+coal-and-coke/metallurgical-coal-consumption-mtoe.csv,Metallurgical coal - Consumption (million metric tons of oil equivalent),million metric tons of oil equivalent,265
+coal-and-coke/metallurgical-coal-consumption-qbtu.csv,Metallurgical coal - Consumption (quadrillion Btu),quadrillion Btu,265
+coal-and-coke/metallurgical-coal-consumption-thousand-short-tons.csv,Metallurgical coal - Consumption (thousand short tons),thousand short tons,265
+coal-and-coke/metallurgical-coal-consumption-tj.csv,Metallurgical coal - Consumption (terajoules),terajoules,265
+coal-and-coke/metallurgical-coal-exports-kmt.csv,Metallurgical coal - Exports (1000 metric tons),1000 metric tons,265
+coal-and-coke/metallurgical-coal-exports-mtoe.csv,Metallurgical coal - Exports (million metric tons of oil equivalent),million metric tons of oil equivalent,265
+coal-and-coke/metallurgical-coal-exports-qbtu.csv,Metallurgical coal - Exports (quadrillion Btu),quadrillion Btu,265
+coal-and-coke/metallurgical-coal-exports-thousand-short-tons.csv,Metallurgical coal - Exports (thousand short tons),thousand short tons,265
+coal-and-coke/metallurgical-coal-exports-tj.csv,Metallurgical coal - Exports (terajoules),terajoules,265
+coal-and-coke/metallurgical-coal-imports-kmt.csv,Metallurgical coal - Imports (1000 metric tons),1000 metric tons,265
+coal-and-coke/metallurgical-coal-imports-mtoe.csv,Metallurgical coal - Imports (million metric tons of oil equivalent),million metric tons of oil equivalent,265
+coal-and-coke/metallurgical-coal-imports-qbtu.csv,Metallurgical coal - Imports (quadrillion Btu),quadrillion Btu,265
+coal-and-coke/metallurgical-coal-imports-thousand-short-tons.csv,Metallurgical coal - Imports (thousand short tons),thousand short tons,265
+coal-and-coke/metallurgical-coal-imports-tj.csv,Metallurgical coal - Imports (terajoules),terajoules,265
+coal-and-coke/metallurgical-coal-production-kmt.csv,Metallurgical coal - Production (1000 metric tons),1000 metric tons,265
+coal-and-coke/metallurgical-coal-production-mtoe.csv,Metallurgical coal - Production (million metric tons of oil equivalent),million metric tons of oil equivalent,265
+coal-and-coke/metallurgical-coal-production-qbtu.csv,Metallurgical coal - Production (quadrillion Btu),quadrillion Btu,265
+coal-and-coke/metallurgical-coal-production-thousand-short-tons.csv,Metallurgical coal - Production (thousand short tons),thousand short tons,265
+coal-and-coke/metallurgical-coal-production-tj.csv,Metallurgical coal - Production (terajoules),terajoules,265
+coal-and-coke/metallurgical-coke-consumption-kmt.csv,Metallurgical coke - Consumption (1000 metric tons),1000 metric tons,265
+coal-and-coke/metallurgical-coke-consumption-mtoe.csv,Metallurgical coke - Consumption (million metric tons of oil equivalent),million metric tons of oil equivalent,265
+coal-and-coke/metallurgical-coke-consumption-qbtu.csv,Metallurgical coke - Consumption (quadrillion Btu),quadrillion Btu,265
+coal-and-coke/metallurgical-coke-consumption-thousand-short-tons.csv,Metallurgical coke - Consumption (thousand short tons),thousand short tons,265
+coal-and-coke/metallurgical-coke-consumption-tj.csv,Metallurgical coke - Consumption (terajoules),terajoules,265
+coal-and-coke/metallurgical-coke-exports-kmt.csv,Metallurgical coke - Exports (1000 metric tons),1000 metric tons,265
+coal-and-coke/metallurgical-coke-exports-mtoe.csv,Metallurgical coke - Exports (million metric tons of oil equivalent),million metric tons of oil equivalent,265
+coal-and-coke/metallurgical-coke-exports-qbtu.csv,Metallurgical coke - Exports (quadrillion Btu),quadrillion Btu,265
+coal-and-coke/metallurgical-coke-exports-thousand-short-tons.csv,Metallurgical coke - Exports (thousand short tons),thousand short tons,265
+coal-and-coke/metallurgical-coke-exports-tj.csv,Metallurgical coke - Exports (terajoules),terajoules,265
+coal-and-coke/metallurgical-coke-imports-kmt.csv,Metallurgical coke - Imports (1000 metric tons),1000 metric tons,265
+coal-and-coke/metallurgical-coke-imports-mtoe.csv,Metallurgical coke - Imports (million metric tons of oil equivalent),million metric tons of oil equivalent,265
+coal-and-coke/metallurgical-coke-imports-qbtu.csv,Metallurgical coke - Imports (quadrillion Btu),quadrillion Btu,265
+coal-and-coke/metallurgical-coke-imports-thousand-short-tons.csv,Metallurgical coke - Imports (thousand short tons),thousand short tons,265
+coal-and-coke/metallurgical-coke-imports-tj.csv,Metallurgical coke - Imports (terajoules),terajoules,265
+coal-and-coke/metallurgical-coke-production-kmt.csv,Metallurgical coke - Production (1000 metric tons),1000 metric tons,265
+coal-and-coke/metallurgical-coke-production-mtoe.csv,Metallurgical coke - Production (million metric tons of oil equivalent),million metric tons of oil equivalent,265
+coal-and-coke/metallurgical-coke-production-qbtu.csv,Metallurgical coke - Production (quadrillion Btu),quadrillion Btu,265
+coal-and-coke/metallurgical-coke-production-thousand-short-tons.csv,Metallurgical coke - Production (thousand short tons),thousand short tons,265
+coal-and-coke/metallurgical-coke-production-tj.csv,Metallurgical coke - Production (terajoules),terajoules,265
+coal-and-coke/subbituminous-consumption-kmt.csv,Subbituminous - Consumption (1000 metric tons),1000 metric tons,265
+coal-and-coke/subbituminous-consumption-mtoe.csv,Subbituminous - Consumption (million metric tons of oil equivalent),million metric tons of oil equivalent,265
+coal-and-coke/subbituminous-consumption-qbtu.csv,Subbituminous - Consumption (quadrillion Btu),quadrillion Btu,265
+coal-and-coke/subbituminous-consumption-thousand-short-tons.csv,Subbituminous - Consumption (thousand short tons),thousand short tons,265
+coal-and-coke/subbituminous-consumption-tj.csv,Subbituminous - Consumption (terajoules),terajoules,265
+coal-and-coke/subbituminous-exports-kmt.csv,Subbituminous - Exports (1000 metric tons),1000 metric tons,265
+coal-and-coke/subbituminous-exports-mtoe.csv,Subbituminous - Exports (million metric tons of oil equivalent),million metric tons of oil equivalent,265
+coal-and-coke/subbituminous-exports-qbtu.csv,Subbituminous - Exports (quadrillion Btu),quadrillion Btu,265
+coal-and-coke/subbituminous-exports-thousand-short-tons.csv,Subbituminous - Exports (thousand short tons),thousand short tons,265
+coal-and-coke/subbituminous-exports-tj.csv,Subbituminous - Exports (terajoules),terajoules,265
+coal-and-coke/subbituminous-imports-kmt.csv,Subbituminous - Imports (1000 metric tons),1000 metric tons,265
+coal-and-coke/subbituminous-imports-mtoe.csv,Subbituminous - Imports (million metric tons of oil equivalent),million metric tons of oil equivalent,265
+coal-and-coke/subbituminous-imports-qbtu.csv,Subbituminous - Imports (quadrillion Btu),quadrillion Btu,265
+coal-and-coke/subbituminous-imports-thousand-short-tons.csv,Subbituminous - Imports (thousand short tons),thousand short tons,265
+coal-and-coke/subbituminous-imports-tj.csv,Subbituminous - Imports (terajoules),terajoules,265
+coal-and-coke/subbituminous-production-kmt.csv,Subbituminous - Production (1000 metric tons),1000 metric tons,265
+coal-and-coke/subbituminous-production-mtoe.csv,Subbituminous - Production (million metric tons of oil equivalent),million metric tons of oil equivalent,265
+coal-and-coke/subbituminous-production-qbtu.csv,Subbituminous - Production (quadrillion Btu),quadrillion Btu,265
+coal-and-coke/subbituminous-production-thousand-short-tons.csv,Subbituminous - Production (thousand short tons),thousand short tons,265
+coal-and-coke/subbituminous-production-tj.csv,Subbituminous - Production (terajoules),terajoules,265
+electricity/biomass-and-waste-capacity-mk.csv,Biomass and waste - Capacity (million kilowatts),million kilowatts,264
+electricity/biomass-and-waste-generation-bkwh.csv,Biomass and waste - Generation (billion kilowatthours),billion kilowatthours,264
+electricity/biomass-and-waste-generation-mtoe.csv,Biomass and waste - Generation (million metric tons of oil equivalent),million metric tons of oil equivalent,264
+electricity/biomass-and-waste-generation-qbtu.csv,Biomass and waste - Generation (quadrillion Btu),quadrillion Btu,264
+electricity/biomass-and-waste-generation-tj.csv,Biomass and waste - Generation (terajoules),terajoules,264
+electricity/electricity-capacity-mk.csv,Electricity - Capacity (million kilowatts),million kilowatts,262
+electricity/electricity-consumption-bkwh.csv,Electricity - Consumption (billion kilowatthours),billion kilowatthours,262
+electricity/electricity-distribution-losses-bkwh.csv,Electricity - Distribution losses (billion kilowatthours),billion kilowatthours,264
+electricity/electricity-exports-bkwh.csv,Electricity - Exports (billion kilowatthours),billion kilowatthours,264
+electricity/electricity-exports-mtoe.csv,Electricity - Exports (million metric tons of oil equivalent),million metric tons of oil equivalent,264
+electricity/electricity-exports-qbtu.csv,Electricity - Exports (quadrillion Btu),quadrillion Btu,264
+electricity/electricity-exports-tj.csv,Electricity - Exports (terajoules),terajoules,264
+electricity/electricity-generation-bkwh.csv,Electricity - Generation (billion kilowatthours),billion kilowatthours,262
+electricity/electricity-imports-bkwh.csv,Electricity - Imports (billion kilowatthours),billion kilowatthours,264
+electricity/electricity-imports-mtoe.csv,Electricity - Imports (million metric tons of oil equivalent),million metric tons of oil equivalent,264
+electricity/electricity-imports-qbtu.csv,Electricity - Imports (quadrillion Btu),quadrillion Btu,264
+electricity/electricity-imports-tj.csv,Electricity - Imports (terajoules),terajoules,264
+electricity/electricity-net-imports-bkwh.csv,Electricity - Net imports (billion kilowatthours),billion kilowatthours,261
+electricity/electricity-net-imports-mtoe.csv,Electricity - Net imports (million metric tons of oil equivalent),million metric tons of oil equivalent,261
+electricity/electricity-net-imports-qbtu.csv,Electricity - Net imports (quadrillion Btu),quadrillion Btu,261
+electricity/electricity-net-imports-tj.csv,Electricity - Net imports (terajoules),terajoules,261
+electricity/fossil-fuels-capacity-mk.csv,Fossil fuels - Capacity (million kilowatts),million kilowatts,264
+electricity/fossil-fuels-generation-bkwh.csv,Fossil fuels - Generation (billion kilowatthours),billion kilowatthours,262
+electricity/geothermal-capacity-mk.csv,Geothermal - Capacity (million kilowatts),million kilowatts,264
+electricity/geothermal-generation-bkwh.csv,Geothermal - Generation (billion kilowatthours),billion kilowatthours,264
+electricity/geothermal-generation-mtoe.csv,Geothermal - Generation (million metric tons of oil equivalent),million metric tons of oil equivalent,264
+electricity/geothermal-generation-qbtu.csv,Geothermal - Generation (quadrillion Btu),quadrillion Btu,264
+electricity/geothermal-generation-tj.csv,Geothermal - Generation (terajoules),terajoules,264
+electricity/hydroelectric-pumped-storage-capacity-mk.csv,Hydroelectric pumped storage - Capacity (million kilowatts),million kilowatts,264
+electricity/hydroelectric-pumped-storage-generation-bkwh.csv,Hydroelectric pumped storage - Generation (billion kilowatthours),billion kilowatthours,264
+electricity/hydroelectricity-capacity-mk.csv,Hydroelectricity - Capacity (million kilowatts),million kilowatts,264
+electricity/hydroelectricity-generation-bkwh.csv,Hydroelectricity - Generation (billion kilowatthours),billion kilowatthours,264
+electricity/hydroelectricity-generation-mtoe.csv,Hydroelectricity - Generation (million metric tons of oil equivalent),million metric tons of oil equivalent,264
+electricity/hydroelectricity-generation-qbtu.csv,Hydroelectricity - Generation (quadrillion Btu),quadrillion Btu,264
+electricity/hydroelectricity-generation-tj.csv,Hydroelectricity - Generation (terajoules),terajoules,264
+electricity/non-hydroelectric-renewables-capacity-mk.csv,Non-hydroelectric renewables - Capacity (million kilowatts),million kilowatts,262
+electricity/non-hydroelectric-renewables-generation-bkwh.csv,Non-hydroelectric renewables - Generation (billion kilowatthours),billion kilowatthours,262
+electricity/non-hydroelectric-renewables-generation-mtoe.csv,Non-hydroelectric renewables - Generation (million metric tons of oil equivalent),million metric tons of oil equivalent,262
+electricity/non-hydroelectric-renewables-generation-qbtu.csv,Non-hydroelectric renewables - Generation (quadrillion Btu),quadrillion Btu,262
+electricity/non-hydroelectric-renewables-generation-tj.csv,Non-hydroelectric renewables - Generation (terajoules),terajoules,262
+electricity/nuclear-capacity-mk.csv,Nuclear - Capacity (million kilowatts),million kilowatts,264
+electricity/nuclear-consumption-qbtu.csv,Nuclear - Consumption (quadrillion Btu),quadrillion Btu,265
+electricity/nuclear-generation-bkwh.csv,Nuclear - Generation (billion kilowatthours),billion kilowatthours,264
+electricity/nuclear-generation-mtoe.csv,Nuclear - Generation (million metric tons of oil equivalent),million metric tons of oil equivalent,264
+electricity/nuclear-generation-qbtu.csv,Nuclear - Generation (quadrillion Btu),quadrillion Btu,264
+electricity/nuclear-generation-tj.csv,Nuclear - Generation (terajoules),terajoules,264
+electricity/nuclear-production-qbtu.csv,Nuclear - Production (quadrillion Btu),quadrillion Btu,265
+electricity/other-gases-generation-bkwh.csv,Other gases - Generation (billion kilowatthours),billion kilowatthours,264
+electricity/renewables-capacity-mk.csv,Renewables - Capacity (million kilowatts),million kilowatts,262
+electricity/renewables-generation-bkwh.csv,Renewables - Generation (billion kilowatthours),billion kilowatthours,262
+electricity/renewables-generation-mtoe.csv,Renewables - Generation (million metric tons of oil equivalent),million metric tons of oil equivalent,264
+electricity/renewables-generation-qbtu.csv,Renewables - Generation (quadrillion Btu),quadrillion Btu,264
+electricity/renewables-generation-tj.csv,Renewables - Generation (terajoules),terajoules,264
+electricity/solar-capacity-mk.csv,Solar - Capacity (million kilowatts),million kilowatts,264
+electricity/solar-generation-bkwh.csv,Solar - Generation (billion kilowatthours),billion kilowatthours,264
+electricity/solar-generation-mtoe.csv,Solar - Generation (million metric tons of oil equivalent),million metric tons of oil equivalent,264
+electricity/solar-generation-qbtu.csv,Solar - Generation (quadrillion Btu),quadrillion Btu,264
+electricity/solar-generation-tj.csv,Solar - Generation (terajoules),terajoules,264
+electricity/solar-tide-wave-fuel-cell-capacity-mk.csv,"Solar, tide, wave, fuel cell - Capacity (million kilowatts)",million kilowatts,261
+electricity/solar-tide-wave-fuel-cell-generation-bkwh.csv,"Solar, tide, wave, fuel cell - Generation (billion kilowatthours)",billion kilowatthours,262
+electricity/solar-tide-wave-fuel-cell-generation-mtoe.csv,"Solar, tide, wave, fuel cell - Generation (million metric tons of oil equivalent)",million metric tons of oil equivalent,262
+electricity/solar-tide-wave-fuel-cell-generation-qbtu.csv,"Solar, tide, wave, fuel cell - Generation (quadrillion Btu)",quadrillion Btu,262
+electricity/solar-tide-wave-fuel-cell-generation-tj.csv,"Solar, tide, wave, fuel cell - Generation (terajoules)",terajoules,262
+electricity/tide-and-wave-capacity-mk.csv,Tide and wave - Capacity (million kilowatts),million kilowatts,264
+electricity/tide-and-wave-generation-bkwh.csv,Tide and wave - Generation (billion kilowatthours),billion kilowatthours,264
+electricity/tide-and-wave-generation-mtoe.csv,Tide and wave - Generation (million metric tons of oil equivalent),million metric tons of oil equivalent,264
+electricity/tide-and-wave-generation-qbtu.csv,Tide and wave - Generation (quadrillion Btu),quadrillion Btu,264
+electricity/tide-and-wave-generation-tj.csv,Tide and wave - Generation (terajoules),terajoules,264
+electricity/wind-capacity-mk.csv,Wind - Capacity (million kilowatts),million kilowatts,264
+electricity/wind-generation-bkwh.csv,Wind - Generation (billion kilowatthours),billion kilowatthours,264
+electricity/wind-generation-mtoe.csv,Wind - Generation (million metric tons of oil equivalent),million metric tons of oil equivalent,264
+electricity/wind-generation-qbtu.csv,Wind - Generation (quadrillion Btu),quadrillion Btu,264
+electricity/wind-generation-tj.csv,Wind - Generation (terajoules),terajoules,264
+energy-intensity/energy-intensity-gdp-thousand-btu-per-usd-at-purchasing-power-parities.csv,Energy intensity - GDP (thousand Btu per USD at purchasing power parities),thousand Btu per USD at purchasing power parities,265
+energy-intensity/energy-intensity-population-million-btu-per-person.csv,Energy intensity - Population (million Btu per person),million Btu per person,265
+energy-intensity/gross-domestic-product-gdp-billion-dollars-at-purchasing-power-parities.csv,Gross domestic product - GDP (billion dollars at purchasing power parities),billion dollars at purchasing power parities,265
+energy-intensity/population-population-people-in-thousands.csv,Population - Population (people in thousands),people in thousands,265
+natural-gas/consumed-natural-gas-emissions-mmtco2.csv,Consumed natural gas - Emissions (million metric tonnes carbon dioxide),million metric tonnes carbon dioxide,264
+natural-gas/dry-natural-gas-consumption-bcf.csv,Dry natural gas - Consumption (billion cubic feet),billion cubic feet,264
+natural-gas/dry-natural-gas-consumption-billion-cubic-meters.csv,Dry natural gas - Consumption (billion cubic meters),billion cubic meters,264
+natural-gas/dry-natural-gas-consumption-mtoe.csv,Dry natural gas - Consumption (million metric tons of oil equivalent),million metric tons of oil equivalent,264
+natural-gas/dry-natural-gas-consumption-qbtu.csv,Dry natural gas - Consumption (quadrillion Btu),quadrillion Btu,264
+natural-gas/dry-natural-gas-consumption-tj.csv,Dry natural gas - Consumption (terajoules),terajoules,264
+natural-gas/dry-natural-gas-exports-bcf.csv,Dry natural gas - Exports (billion cubic feet),billion cubic feet,264
+natural-gas/dry-natural-gas-exports-billion-cubic-meters.csv,Dry natural gas - Exports (billion cubic meters),billion cubic meters,264
+natural-gas/dry-natural-gas-exports-mtoe.csv,Dry natural gas - Exports (million metric tons of oil equivalent),million metric tons of oil equivalent,264
+natural-gas/dry-natural-gas-exports-qbtu.csv,Dry natural gas - Exports (quadrillion Btu),quadrillion Btu,264
+natural-gas/dry-natural-gas-exports-tj.csv,Dry natural gas - Exports (terajoules),terajoules,264
+natural-gas/dry-natural-gas-imports-bcf.csv,Dry natural gas - Imports (billion cubic feet),billion cubic feet,264
+natural-gas/dry-natural-gas-imports-billion-cubic-meters.csv,Dry natural gas - Imports (billion cubic meters),billion cubic meters,264
+natural-gas/dry-natural-gas-imports-mtoe.csv,Dry natural gas - Imports (million metric tons of oil equivalent),million metric tons of oil equivalent,264
+natural-gas/dry-natural-gas-imports-qbtu.csv,Dry natural gas - Imports (quadrillion Btu),quadrillion Btu,264
+natural-gas/dry-natural-gas-imports-tj.csv,Dry natural gas - Imports (terajoules),terajoules,264
+natural-gas/dry-natural-gas-production-bcf.csv,Dry natural gas - Production (billion cubic feet),billion cubic feet,264
+natural-gas/dry-natural-gas-production-billion-cubic-meters.csv,Dry natural gas - Production (billion cubic meters),billion cubic meters,264
+natural-gas/dry-natural-gas-production-mtoe.csv,Dry natural gas - Production (million metric tons of oil equivalent),million metric tons of oil equivalent,264
+natural-gas/dry-natural-gas-production-qbtu.csv,Dry natural gas - Production (quadrillion Btu),quadrillion Btu,264
+natural-gas/dry-natural-gas-production-tj.csv,Dry natural gas - Production (terajoules),terajoules,264
+natural-gas/gross-natural-gas-production-bcf.csv,Gross natural gas - Production (billion cubic feet),billion cubic feet,264
+natural-gas/gross-natural-gas-production-billion-cubic-meters.csv,Gross natural gas - Production (billion cubic meters),billion cubic meters,264
+natural-gas/natural-gas-consumption-qbtu.csv,Natural gas - Consumption (quadrillion Btu),quadrillion Btu,265
+natural-gas/natural-gas-emissions-mmtco2.csv,Natural gas - Emissions (million metric tonnes carbon dioxide),million metric tonnes carbon dioxide,264
+natural-gas/natural-gas-generation-bkwh.csv,Natural gas - Generation (billion kilowatthours),billion kilowatthours,264
+natural-gas/natural-gas-production-qbtu.csv,Natural gas - Production (quadrillion Btu),quadrillion Btu,265
+natural-gas/reinjected-natural-gas-production-bcf.csv,Reinjected natural gas - Production (billion cubic feet),billion cubic feet,264
+natural-gas/reinjected-natural-gas-production-billion-cubic-meters.csv,Reinjected natural gas - Production (billion cubic meters),billion cubic meters,264
+natural-gas/vented-and-flared-natural-gas-production-bcf.csv,Vented and flared natural gas - Production (billion cubic feet),billion cubic feet,264
+natural-gas/vented-and-flared-natural-gas-production-billion-cubic-meters.csv,Vented and flared natural gas - Production (billion cubic meters),billion cubic meters,264
+petroleum-and-other-liquids/crude-oil-including-lease-condensate-exports-tbpd.csv,Crude oil including lease condensate - Exports (thousand barrels per day),thousand barrels per day,264
+petroleum-and-other-liquids/crude-oil-including-lease-condensate-imports-tbpd.csv,Crude oil including lease condensate - Imports (thousand barrels per day),thousand barrels per day,264
+petroleum-and-other-liquids/crude-oil-including-lease-condensate-production-kmt.csv,Crude oil including lease condensate - Production (1000 metric tons),1000 metric tons,149
+petroleum-and-other-liquids/crude-oil-including-lease-condensate-production-mtoe.csv,Crude oil including lease condensate - Production (million metric tons of oil equivalent),million metric tons of oil equivalent,133
+petroleum-and-other-liquids/crude-oil-including-lease-condensate-production-qbtu.csv,Crude oil including lease condensate - Production (quadrillion Btu),quadrillion Btu,264
+petroleum-and-other-liquids/crude-oil-including-lease-condensate-production-tbpd.csv,Crude oil including lease condensate - Production (thousand barrels per day),thousand barrels per day,261
+petroleum-and-other-liquids/crude-oil-including-lease-condensate-production-tj.csv,Crude oil including lease condensate - Production (terajoules),terajoules,133
+petroleum-and-other-liquids/crude-oil-ngpl-and-other-liquids-production-tbpd.csv,"Crude oil, NGPL, and other liquids - Production (thousand barrels per day)",thousand barrels per day,261
+petroleum-and-other-liquids/distillate-fuel-oil-bunker-tbpd.csv,Distillate fuel oil - Bunker (thousand barrels per day),thousand barrels per day,245
+petroleum-and-other-liquids/distillate-fuel-oil-consumption-kmt.csv,Distillate fuel oil - Consumption (1000 metric tons),1000 metric tons,262
+petroleum-and-other-liquids/distillate-fuel-oil-consumption-mtoe.csv,Distillate fuel oil - Consumption (million metric tons of oil equivalent),million metric tons of oil equivalent,262
+petroleum-and-other-liquids/distillate-fuel-oil-consumption-qbtu.csv,Distillate fuel oil - Consumption (quadrillion Btu),quadrillion Btu,262
+petroleum-and-other-liquids/distillate-fuel-oil-consumption-tbpd.csv,Distillate fuel oil - Consumption (thousand barrels per day),thousand barrels per day,264
+petroleum-and-other-liquids/distillate-fuel-oil-consumption-tj.csv,Distillate fuel oil - Consumption (terajoules),terajoules,262
+petroleum-and-other-liquids/distillate-fuel-oil-production-tbpd.csv,Distillate fuel oil - Production (thousand barrels per day),thousand barrels per day,261
+petroleum-and-other-liquids/ethane-consumption-tbpd.csv,Ethane - Consumption (thousand barrels per day),thousand barrels per day,247
+petroleum-and-other-liquids/ethane-exports-tbpd.csv,Ethane - Exports (thousand barrels per day),thousand barrels per day,246
+petroleum-and-other-liquids/ethane-imports-tbpd.csv,Ethane - Imports (thousand barrels per day),thousand barrels per day,246
+petroleum-and-other-liquids/ethane-non-refinery-production-tbpd.csv,Ethane (non refinery) - Production (thousand barrels per day),thousand barrels per day,247
+petroleum-and-other-liquids/jet-fuel-consumption-kmt.csv,Jet fuel - Consumption (1000 metric tons),1000 metric tons,262
+petroleum-and-other-liquids/jet-fuel-consumption-mtoe.csv,Jet fuel - Consumption (million metric tons of oil equivalent),million metric tons of oil equivalent,262
+petroleum-and-other-liquids/jet-fuel-consumption-qbtu.csv,Jet fuel - Consumption (quadrillion Btu),quadrillion Btu,262
+petroleum-and-other-liquids/jet-fuel-consumption-tbpd.csv,Jet fuel - Consumption (thousand barrels per day),thousand barrels per day,264
+petroleum-and-other-liquids/jet-fuel-consumption-tj.csv,Jet fuel - Consumption (terajoules),terajoules,262
+petroleum-and-other-liquids/jet-fuel-production-tbpd.csv,Jet fuel - Production (thousand barrels per day),thousand barrels per day,261
+petroleum-and-other-liquids/kerosene-consumption-kmt.csv,Kerosene - Consumption (1000 metric tons),1000 metric tons,262
+petroleum-and-other-liquids/kerosene-consumption-mtoe.csv,Kerosene - Consumption (million metric tons of oil equivalent),million metric tons of oil equivalent,262
+petroleum-and-other-liquids/kerosene-consumption-qbtu.csv,Kerosene - Consumption (quadrillion Btu),quadrillion Btu,262
+petroleum-and-other-liquids/kerosene-consumption-tbpd.csv,Kerosene - Consumption (thousand barrels per day),thousand barrels per day,264
+petroleum-and-other-liquids/kerosene-consumption-tj.csv,Kerosene - Consumption (terajoules),terajoules,262
+petroleum-and-other-liquids/kerosene-production-tbpd.csv,Kerosene - Production (thousand barrels per day),thousand barrels per day,261
+petroleum-and-other-liquids/liquefied-petroleum-gases-and-ethane-consumption-tbpd.csv,Liquefied petroleum gases and ethane - Consumption (thousand barrels per day),thousand barrels per day,247
+petroleum-and-other-liquids/liquefied-petroleum-gases-and-ethane-exports-tbpd.csv,Liquefied petroleum gases and ethane - Exports (thousand barrels per day),thousand barrels per day,246
+petroleum-and-other-liquids/liquefied-petroleum-gases-and-ethane-imports-tbpd.csv,Liquefied petroleum gases and ethane - Imports (thousand barrels per day),thousand barrels per day,246
+petroleum-and-other-liquids/liquefied-petroleum-gases-and-ethane-production-tbpd.csv,Liquefied petroleum gases and ethane - Production (thousand barrels per day),thousand barrels per day,247
+petroleum-and-other-liquids/liquefied-petroleum-gases-and-ethane-refinery-production-tbpd.csv,Liquefied petroleum gases and ethane (refinery) - Production (thousand barrels per day),thousand barrels per day,246
+petroleum-and-other-liquids/liquefied-petroleum-gases-consumption-kmt.csv,Liquefied Petroleum Gases - Consumption (1000 metric tons),1000 metric tons,262
+petroleum-and-other-liquids/liquefied-petroleum-gases-consumption-mtoe.csv,Liquefied Petroleum Gases - Consumption (million metric tons of oil equivalent),million metric tons of oil equivalent,262
+petroleum-and-other-liquids/liquefied-petroleum-gases-consumption-qbtu.csv,Liquefied Petroleum Gases - Consumption (quadrillion Btu),quadrillion Btu,262
+petroleum-and-other-liquids/liquefied-petroleum-gases-consumption-tbpd.csv,Liquefied Petroleum Gases - Consumption (thousand barrels per day),thousand barrels per day,264
+petroleum-and-other-liquids/liquefied-petroleum-gases-consumption-tj.csv,Liquefied Petroleum Gases - Consumption (terajoules),terajoules,262
+petroleum-and-other-liquids/liquefied-petroleum-gases-nonrefinery-production-tbpd.csv,Liquefied petroleum gases (nonrefinery) - Production (thousand barrels per day),thousand barrels per day,247
+petroleum-and-other-liquids/liquefied-petroleum-gases-production-tbpd.csv,Liquefied Petroleum Gases - Production (thousand barrels per day),thousand barrels per day,261
+petroleum-and-other-liquids/lpg-consumption-tbpd.csv,LPG - Consumption (thousand barrels per day),thousand barrels per day,247
+petroleum-and-other-liquids/lpg-exports-tbpd.csv,LPG - Exports (thousand barrels per day),thousand barrels per day,246
+petroleum-and-other-liquids/lpg-imports-tbpd.csv,LPG - Imports (thousand barrels per day),thousand barrels per day,246
+petroleum-and-other-liquids/motor-gasoline-consumption-kmt.csv,Motor gasoline - Consumption (1000 metric tons),1000 metric tons,262
+petroleum-and-other-liquids/motor-gasoline-consumption-mtoe.csv,Motor gasoline - Consumption (million metric tons of oil equivalent),million metric tons of oil equivalent,262
+petroleum-and-other-liquids/motor-gasoline-consumption-qbtu.csv,Motor gasoline - Consumption (quadrillion Btu),quadrillion Btu,262
+petroleum-and-other-liquids/motor-gasoline-consumption-tbpd.csv,Motor gasoline - Consumption (thousand barrels per day),thousand barrels per day,264
+petroleum-and-other-liquids/motor-gasoline-consumption-tj.csv,Motor gasoline - Consumption (terajoules),terajoules,262
+petroleum-and-other-liquids/motor-gasoline-production-tbpd.csv,Motor gasoline - Production (thousand barrels per day),thousand barrels per day,261
+petroleum-and-other-liquids/ngpl-production-mtoe.csv,NGPL - Production (million metric tons of oil equivalent),million metric tons of oil equivalent,106
+petroleum-and-other-liquids/ngpl-production-qbtu.csv,NGPL - Production (quadrillion Btu),quadrillion Btu,261
+petroleum-and-other-liquids/ngpl-production-tbpd.csv,NGPL - Production (thousand barrels per day),thousand barrels per day,261
+petroleum-and-other-liquids/ngpl-production-tj.csv,NGPL - Production (terajoules),terajoules,106
+petroleum-and-other-liquids/oil-generation-bkwh.csv,Oil - Generation (billion kilowatthours),billion kilowatthours,264
+petroleum-and-other-liquids/other-liquids-production-tbpd.csv,Other liquids - Production (thousand barrels per day),thousand barrels per day,261
+petroleum-and-other-liquids/other-petroleum-liquids-consumption-kmt.csv,Other petroleum liquids - Consumption (1000 metric tons),1000 metric tons,262
+petroleum-and-other-liquids/other-petroleum-liquids-consumption-mtoe.csv,Other petroleum liquids - Consumption (million metric tons of oil equivalent),million metric tons of oil equivalent,262
+petroleum-and-other-liquids/other-petroleum-liquids-consumption-qbtu.csv,Other petroleum liquids - Consumption (quadrillion Btu),quadrillion Btu,262
+petroleum-and-other-liquids/other-petroleum-liquids-consumption-tbpd.csv,Other petroleum liquids - Consumption (thousand barrels per day),thousand barrels per day,264
+petroleum-and-other-liquids/other-petroleum-liquids-consumption-tj.csv,Other petroleum liquids - Consumption (terajoules),terajoules,262
+petroleum-and-other-liquids/other-petroleum-liquids-production-tbpd.csv,Other petroleum liquids - Production (thousand barrels per day),thousand barrels per day,261
+petroleum-and-other-liquids/petroleum-and-other-liquids-consumption-kmt.csv,Petroleum and other liquids - Consumption (1000 metric tons),1000 metric tons,262
+petroleum-and-other-liquids/petroleum-and-other-liquids-consumption-mtoe.csv,Petroleum and other liquids - Consumption (million metric tons of oil equivalent),million metric tons of oil equivalent,262
+petroleum-and-other-liquids/petroleum-and-other-liquids-consumption-qbtu-1.csv,Petroleum and other liquids - Consumption (quadrillion Btu),quadrillion Btu,262
+petroleum-and-other-liquids/petroleum-and-other-liquids-consumption-qbtu.csv,Petroleum and other liquids - Consumption (quadrillion Btu),quadrillion Btu,265
+petroleum-and-other-liquids/petroleum-and-other-liquids-consumption-tbpd.csv,Petroleum and other liquids - Consumption (thousand barrels per day),thousand barrels per day,262
+petroleum-and-other-liquids/petroleum-and-other-liquids-consumption-tj.csv,Petroleum and other liquids - Consumption (terajoules),terajoules,262
+petroleum-and-other-liquids/petroleum-and-other-liquids-emissions-mmtco2-1.csv,Petroleum and other liquids - Emissions (million metric tonnes carbon dioxide),million metric tonnes carbon dioxide,262
+petroleum-and-other-liquids/petroleum-and-other-liquids-emissions-mmtco2.csv,Petroleum and other liquids - Emissions (million metric tonnes carbon dioxide),million metric tonnes carbon dioxide,262
+petroleum-and-other-liquids/petroleum-and-other-liquids-production-qbtu.csv,Petroleum and other liquids - Production (quadrillion Btu),quadrillion Btu,265
+petroleum-and-other-liquids/petroleum-and-other-liquids-stocks-oecd-millions-barrels.csv,"Petroleum and other liquids - Stocks, OECD (millions barrels)",millions barrels,60
+petroleum-and-other-liquids/refined-petroleum-products-bunker-tbpd.csv,Refined petroleum products - Bunker (thousand barrels per day),thousand barrels per day,245
+petroleum-and-other-liquids/refined-petroleum-products-consumption-kmt.csv,Refined petroleum products - Consumption (1000 metric tons),1000 metric tons,262
+petroleum-and-other-liquids/refined-petroleum-products-consumption-mtoe.csv,Refined petroleum products - Consumption (million metric tons of oil equivalent),million metric tons of oil equivalent,262
+petroleum-and-other-liquids/refined-petroleum-products-consumption-qbtu.csv,Refined petroleum products - Consumption (quadrillion Btu),quadrillion Btu,262
+petroleum-and-other-liquids/refined-petroleum-products-consumption-tbpd.csv,Refined petroleum products - Consumption (thousand barrels per day),thousand barrels per day,262
+petroleum-and-other-liquids/refined-petroleum-products-consumption-tj.csv,Refined petroleum products - Consumption (terajoules),terajoules,262
+petroleum-and-other-liquids/refined-petroleum-products-production-tbpd.csv,Refined petroleum products - Production (thousand barrels per day),thousand barrels per day,261
+petroleum-and-other-liquids/refinery-processing-gain-production-tbpd.csv,Refinery processing gain - Production (thousand barrels per day),thousand barrels per day,261
+petroleum-and-other-liquids/residual-fuel-oil-bunker-kmt.csv,Residual fuel oil - Bunker (1000 metric tons),1000 metric tons,41
+petroleum-and-other-liquids/residual-fuel-oil-bunker-tbpd.csv,Residual fuel oil - Bunker (thousand barrels per day),thousand barrels per day,245
+petroleum-and-other-liquids/residual-fuel-oil-consumption-kmt.csv,Residual fuel oil - Consumption (1000 metric tons),1000 metric tons,262
+petroleum-and-other-liquids/residual-fuel-oil-consumption-mtoe.csv,Residual fuel oil - Consumption (million metric tons of oil equivalent),million metric tons of oil equivalent,262
+petroleum-and-other-liquids/residual-fuel-oil-consumption-qbtu.csv,Residual fuel oil - Consumption (quadrillion Btu),quadrillion Btu,262
+petroleum-and-other-liquids/residual-fuel-oil-consumption-tbpd.csv,Residual fuel oil - Consumption (thousand barrels per day),thousand barrels per day,264
+petroleum-and-other-liquids/residual-fuel-oil-consumption-tj.csv,Residual fuel oil - Consumption (terajoules),terajoules,262
+petroleum-and-other-liquids/residual-fuel-oil-production-tbpd.csv,Residual fuel oil - Production (thousand barrels per day),thousand barrels per day,261
+petroleum-and-other-liquids/total-petroleum-and-other-liquids-production-tbpd.csv,Total petroleum and other liquids - Production (thousand barrels per day),thousand barrels per day,261
+total-energy/nuclear-renewables-and-other-consumption-qbtu.csv,"Nuclear, renewables, and other - Consumption (quadrillion Btu)",quadrillion Btu,265
+total-energy/nuclear-renewables-and-other-production-qbtu.csv,"Nuclear, renewables, and other - Production (quadrillion Btu)",quadrillion Btu,265
+total-energy/primary-energy-consumption-mtoe.csv,Primary energy - Consumption (million metric tons of oil equivalent),million metric tons of oil equivalent,265
+total-energy/primary-energy-consumption-qbtu.csv,Primary energy - Consumption (quadrillion Btu),quadrillion Btu,265
+total-energy/primary-energy-consumption-tj.csv,Primary energy - Consumption (terajoules),terajoules,265
+total-energy/primary-energy-production-mtoe.csv,Primary energy - Production (million metric tons of oil equivalent),million metric tons of oil equivalent,265
+total-energy/primary-energy-production-qbtu.csv,Primary energy - Production (quadrillion Btu),quadrillion Btu,265
+total-energy/primary-energy-production-tj.csv,Primary energy - Production (terajoules),terajoules,265
+total-energy/renewables-and-other-consumption-qbtu.csv,Renewables and other - Consumption (quadrillion Btu),quadrillion Btu,265
+total-energy/renewables-and-other-production-qbtu.csv,Renewables and other - Production (quadrillion Btu),quadrillion Btu,265
