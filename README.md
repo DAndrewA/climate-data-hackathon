@@ -22,5 +22,10 @@ uv run --with ipython --with ipykernel ipython kernel install --user --env VIRTU
 
 ```
 uv run --with jupyter jupyter lab
-<then open /tests/dynamic_co2_with_package>
 ```
+
+Files to be opened in the jupyter notebook are:
++ `/tests/dynamic_co2_with_package.ipynb`
++ `/Weronikas Code/Forecasting_co2.ipynb`
++ `Weronikas Code/co2_emission_plot_with_T_anom.ipynb`
+
