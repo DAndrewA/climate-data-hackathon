@@ -10,6 +10,10 @@ import numpy as np
 from typing import Any, TypeAlias, Callable, Self
 from collections import deque
 
+
+epsilon = 0.0001
+
+
 class VerletIntegrable:
     def __init__(self, initial_x, damping: float):
         self.x_values = deque(maxlen=2)
@@ -30,6 +34,11 @@ class VerletIntegrable:
 
     def reset_velocity(self):
         self.x_values.append(self.x)
+        return self
+
+    def move_to(self, new_x):
+        self.x_values.append(new_x)
+        self.reset_velocity()
         return self
 
     def start_frame(self):
@@ -56,8 +65,8 @@ class VerletIntegrable:
 
 
 class Point(VerletIntegrable):
-    def __init__(self, initial_x: np.ndarray, mass: float, radius: float, name: str, color="blue"):
-        super().__init__(initial_x)
+    def __init__(self, initial_x: np.ndarray, damping: float, mass: float, radius: float, name: str, color="blue"):
+        super().__init__(initial_x, damping)
         self.mass = mass
         self.radius = radius
         self.name = name
