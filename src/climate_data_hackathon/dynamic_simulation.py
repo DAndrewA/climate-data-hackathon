@@ -98,8 +98,8 @@ class Point(VerletIntegrable):
         """
         combined_mass = self.mass + other.mass
         exclusion_displacement = self.determine_exclusion_displacement(other)
-        other.x_values[-1] += exclusion_displacement * 0.5 * fraction_reduce_overlap#* self.mass / combined_mass * fraction_reduce_overlap
-        self.x_values[-1] -= exclusion_displacement * 0.5 * fraction_reduce_overlap#* other.mass / combined_mass * fraction_reduce_overlap
+        other.x_values[-1] += exclusion_displacement * self.mass / combined_mass * fraction_reduce_overlap
+        self.x_values[-1] -= exclusion_displacement * other.mass / combined_mass * fraction_reduce_overlap
         return self
 
     def overlaps(self, other):

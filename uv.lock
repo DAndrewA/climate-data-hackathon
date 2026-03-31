@@ -208,6 +208,7 @@ dependencies = [
     { name = "scikit-learn" },
     { name = "torch" },
     { name = "torchvision" },
+    { name = "tqdm" },
 ]
 
 [package.metadata]
@@ -222,6 +223,7 @@ requires-dist = [
     { name = "scikit-learn", specifier = ">=1.8.0" },
     { name = "torch", specifier = ">=2.11.0" },
     { name = "torchvision", specifier = ">=0.26.0" },
+    { name = "tqdm", specifier = ">=4.67.3" },
 ]
 
 [[package]]
@@ -2066,6 +2068,7 @@ wheels = [
 ]
 
 [[package]]
+
 name = "tqdm"
 version = "4.67.3"
 source = { registry = "https://pypi.org/simple" }
