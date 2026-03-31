@@ -1,0 +1,42 @@
+{
+  "chart": {
+    "title": "Annual CO₂ emissions",
+    "subtitle": "Carbon dioxide (CO₂) emissions from [fossil fuels and industry](#dod:fossilemissions). [Land-use change emissions](#dod:land-use-change-emissions) are not included.",
+    "citation": "Global Carbon Budget (2025)",
+    "originalChartUrl": "https://ourworldindata.org/grapher/annual-co2-emissions-per-country?v=1&csvType=full&useColumnShortNames=false",
+    "selection": [
+      "United States",
+      "United Kingdom",
+      "India",
+      "China",
+      "France",
+      "Germany",
+      "Brazil"
+    ]
+  },
+  "columns": {
+    "Annual CO₂ emissions": {
+      "titleShort": "Annual CO₂ emissions",
+      "titleLong": "Annual CO₂ emissions",
+      "descriptionShort": "Annual total emissions of carbon dioxide (CO₂), excluding land-use change, measured in tonnes.",
+      "descriptionKey": [
+        "This data is based on territorial emissions, meaning the emissions produced within a country's borders, but not those from imported goods. For example, emissions from imported steel are counted in the country where the steel is produced. To learn more and look at emissions adjusted for trade, read our article: [How do CO₂ emissions compare when we adjust for trade?](https://ourworldindata.org/consumption-based-co2)",
+        "Emissions from international aviation and shipping are not included in the data for any individual country or region. They are only counted in the global total."
+      ],
+      "descriptionProcessing": "- Global emissions are converted from tonnes of carbon to tonnes of carbon dioxide (CO₂) using a factor of 3.664. This is the conversion factor [recommended by the Global Carbon Project](https://globalcarbonbudgetdata.org/downloads/jGJH0-data/Global+Carbon+Budget+v2024+Dataset+Descriptions.pdf). It reflects that one tonne of carbon, when fully oxidized, forms 3.664 tonnes of CO₂, based on the relative molecular weights of carbon and oxygen in CO₂.\n- Emissions from the 1991 Kuwaiti oil fires are included in Kuwait's emissions for that year.",
+      "shortUnit": "t",
+      "unit": "tonnes",
+      "timespan": "1750-2024",
+      "type": "Numeric",
+      "owidVariableId": 1119906,
+      "shortName": "emissions_total",
+      "lastUpdated": "2025-11-13",
+      "nextUpdate": "2026-11-13",
+      "citationShort": "Global Carbon Budget (2025) – with major processing by Our World in Data",
+      "citationLong": "Global Carbon Budget (2025) – with major processing by Our World in Data. “Annual CO₂ emissions” [dataset]. Global Carbon Project, “Global Carbon Budget v15” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/1119906.metadata.json"
+    }
+  },
+  "dateDownloaded": "2026-03-30",
+  "activeFilters": {}
+}
